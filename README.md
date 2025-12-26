@@ -1,4 +1,4 @@
-# CEC
+# WIT
 Project Submission Repository
 
 ## Video Link
