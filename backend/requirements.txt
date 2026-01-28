@@ -13,3 +13,5 @@ langchain-google-genai
 langchain
 google-generativeai
 pillow
+matplotlib
+seaborn
