@@ -70,9 +70,16 @@ os.makedirs(REPORTS_DIR, exist_ok=True)
 CHART_PATH_BAR = os.path.join(REPORTS_DIR, 'total_spending_by_category_bar_chart.png')
 CHART_PATH_LINE = os.path.join(REPORTS_DIR, 'monthly_spending_trend_line_chart.png')
 
+# Define your trusted domains (Localhost + Your Live Vercel App)
+origins = [
+    "http://localhost:3000",
+    "https://finance-ai-assistant.vercel.app",  # Your generic Vercel URL
+    "https://finance-ai-assistant-git-main-yagnesh109.vercel.app" # (Optional) Your branch URL
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # For testing, allow all; change to localhost:3000 later
+    allow_origins=origins,  # <--- Use the list above
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
