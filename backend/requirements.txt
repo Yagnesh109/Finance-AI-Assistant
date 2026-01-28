@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+pandas
+supabase
+python-dotenv
+python-jose[cryptography]
+passlib[bcrypt]
+pdfplumber
+pikepdf
+langchain-google-genai
+langchain
+google-generativeai
+pillow
